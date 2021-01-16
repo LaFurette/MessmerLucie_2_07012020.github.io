@@ -1,0 +1,527 @@
+/*Elemtents principaux de la page*/
+/*Mise en place Police et marges*/
+body {
+    font-family: 'Raleway', sans-serif ;
+    margin: 0;
+}
+main {
+    max-width: 1400px;
+    display: block;
+    margin : auto ;
+    padding : 0 1.5rem ;
+    box-sizing: border-box;
+}
+
+/*Header*/
+/* Organisation du logo et menu de navigation*/
+header { 
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/*logo*/
+.logobloc {
+    flex: 1;
+}
+.logo {
+    padding: 0 1.5rem;
+    
+}
+/*navbar*/
+nav ul {
+    list-style-type: none;  
+    display: flex; 
+}
+.navlink , .navlinkblue {
+    color :black ;
+    text-decoration: none;
+    border : 0.15em solid white ;
+    padding : 2rem 1.5rem;
+}
+.navlinkblue{
+    color: #0065FC;
+    font-weight: bold;
+}
+.navlink:hover {
+    border-top : 0.2rem solid #0065FC
+}
+.navlink:hover {
+    color: #0065FC;
+}
+
+/*main page*/
+/*mise en page des titres et charte de couleur*/
+h1{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin-top: 0.3rem;
+}
+i {
+    color: #0065FC;
+}
+
+/*intro*/
+/*barre de recherche*/
+.searchplace {
+    display: flex;
+
+}
+.searchcity {
+    border-top: #f2f2f2 1px solid;
+    border-bottom: #f2f2f2 1px solid ;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    padding-left : 1rem;
+}
+.searchformwrapicon {
+    background-color: #F2F2F2;
+    min-width : 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.searchformwrapicon i{
+    color : black;
+}
+button {
+    background-color: #0065FC;
+    color: white;
+    cursor : pointer ;
+    padding : 1rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    border-color: #0065FC; 
+    font-weight: bold;
+    font-size: 100%;
+}
+.fa-search {
+    color: white;
+}
+/*mis en place de la section filtre*/
+.filtre {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+.filtre h2 {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.filteroption {
+    margin : 0 1rem;
+}
+.filtericon {
+    display: flex;
+    justify-content: center;
+    border-radius: 3rem;
+    background-color: rgb(222, 235, 255);
+    padding : 1rem ;
+    width: 1rem;
+    height: 1rem;   
+}
+.searchfilter {
+    display: flex;
+    align-items : center ;
+    border : 0.125rem solid rgb(222, 235, 255) ;
+    border-radius : 2em ;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding-right: 0.5rem;
+}
+.searchfilter:hover {
+    transform: scale(1.07);
+    background-color: rgb(222, 235, 255);
+    color : #0065FC ;
+}
+.info i {
+    display: flex;
+    justify-content: center;
+    border : 0.125rem solid #d9d9d9 ;
+    border-radius: 50%;
+    padding : 0.5rem ;
+    width: 1em;
+    margin-right: 1rem;
+}
+.info {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+/*section hebergements*/
+/*définition du bloc hosting*/
+.hosting {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+#host , aside {
+    background-color: #F2F2F2;
+    border-radius: 1.5em;
+    padding-bottom : 2rem ;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.hosting h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.hosting h3 , .hosting p {
+    margin: 0.5rem 0;
+}
+.mainhost , .pophost  {
+    background-color: white;
+    border-radius: 1.5em ;
+    box-shadow: 0 0 15px #000004;
+    padding: 0.3rem ;
+    box-sizing: border-box;
+    height: 100%;
+}
+figure  {
+    margin: 0;
+}
+figcaption {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+figcaption p {
+    font-weight: normal;
+    word-wrap: break-word;
+}
+section a , aside a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.hostingMainCardGradeIcon2 {
+    color: #d9d9d9 ;
+}
+/*définition des la section host*/
+#host {
+    min-width: 60%;
+}
+/*Mise en page des différents articles*/
+.hostcontainement {
+    display : flex ;
+    flex-wrap : wrap ;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-bottom: 2rem ;
+    justify-content: space-evenly;
+}
+.mainhost {
+    width: 30%;
+    min-width: 200px;
+}
+.mainimg{
+    height: 120px;
+    object-fit: cover ;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1.5em 1.5em 0em 0em;
+}
+.mainhost:hover {
+    transform: scale(1.07);
+}
+
+/*aside populaire*/
+/*définition de la partie aside*/
+aside h2 {
+    display: flex;
+    justify-content: space-between;
+}
+aside {
+    min-width: 33%;
+    box-sizing: border-box;
+}
+.fa-chart-line {
+    color: black;
+}
+/*mise en page des différents articles*/
+.popcontainement {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.pophost figure {
+    display: flex;
+}
+.pophost i {
+    padding-top: 1.75rem;
+}
+.popimg{
+    height: 140px;
+    width: 40%;
+    object-fit: cover ;
+    border-radius: 1.5em 0em 0em 1.5em;
+}
+.pophost:hover {
+    transform: scale(1.05);
+}
+
+/*section activités*/
+/*définition de la section activity*/
+#activity {
+    padding-bottom: 2rem ;
+}
+.activitycontainement {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}  
+/*mise en page des différents articles*/
+.activity {
+    background-color: white;
+    border-radius: 1.5em ;
+    box-shadow: 0 0 10px #000002;
+    box-sizing: border-box;
+    height: 215px;
+}
+#activity img {
+    height: 160px;
+    width: 100%;
+    border-radius: 1.5em 1.5em 0em 0em;
+    object-fit: cover ;
+    max-width: 100%;
+    max-height: 100%;
+}
+#activity h3 {
+    margin-top: 0.5rem;
+}
+.activity2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.activity:hover {
+    transform: scale(1.03);
+}
+
+/*footer*/
+/*définition du footer*/
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.footer {
+    padding: 0 2rem;
+    width: 1400px;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+/*menu de nav du footer*/
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 1rem;
+}
+.footersection {
+    width: 30%;
+    padding : 2rem 2rem ;
+}
+.footernav {
+    padding-left: 0;
+}
+footer li {
+    display: flex;
+}
+
+/*RESPONSIVE DESIGN - Site en fonction taille écran*/
+/*header en dessous de 605px*/
+@media screen and (max-width:605px)
+{
+    main {
+        width: auto;
+    }
+    header nav {
+        order: 2;
+        width: 100%;
+        justify-content: space-between;
+    }
+    header nav ul {
+        padding : 0 ;
+        justify-content: space-between;   
+    }
+    header nav ul li {
+        width : 100%;
+        text-align: center;
+        border-bottom: 0.3rem solid #f2f2f2;
+        padding: 1.5rem 0;
+    }
+    header nav ul li:hover {
+        border-bottom-color: #0065FC;
+    }
+    header .navlink {
+        border: none;
+    } 
+    header .navlink:hover {
+        border: none;
+    }
+    .navlinkblue{
+        order: 1;
+    }
+    .searchplace {
+        width : 100% ;
+    }
+    .searchbutton {
+        display: none;
+    }
+}
+/*logo recherche au dessus de 600px*/
+@media screen and (min-width:600px){
+    .fa-search {
+        display: none!important;
+    }
+}
+/*search section avec taille max d'écran de 1050px*/
+@media screen and (max-width:1050px){
+    .filtre h2 {
+        width : 100% ;
+    }
+}
+/*Section et aside hébergements en dessous de 600px*/
+@media screen and (max-width:600px){
+    .hosting {
+        flex-direction: column;
+    }
+    .hosting #host {
+        background-color: inherit;
+    }
+    .hosting article {
+        overflow: auto;
+    }
+    #host {
+        padding: 0rem;
+        padding-bottom: 2rem;
+    }
+    #host .mainhost {
+        width : 100% ;
+    } 
+    .hosting aside {
+        margin-left: -8%;
+        margin-right: -8%;
+        border-radius: 0;
+    }
+    aside .popimg {
+        overflow: auto;
+    }
+}
+@media screen and (max-width:400px){
+    aside .pophost i {
+        padding-top:1.5rem;
+    }
+    aside .pophost h3 {
+        line-height: 1;
+    }
+    aside .pophost figcaption {
+        margin-left: 0.5rem;
+    }
+    aside .pophost {
+        padding : 0.2rem
+    }
+}
+/*taille des articles mainhost entre 600px et 870px*/
+@media screen and (min-width:600px) and (max-width:870px){
+    #host .mainhost {
+        width : 45% ;
+    }
+}
+/*Position et disposition des sections host et aside en dessous de 1180px*/
+@media screen and (max-width:1180px){
+    .hosting {
+        flex-direction: column;
+        row-gap: 1rem;  
+    }
+    aside {
+        order: 1;
+    }
+    #host {
+        order: 2;
+    }
+    aside .popcontainement {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .popcontainement .pophost {
+        width: 32%;
+    }   
+}
+@media screen and (max-width:1105px){
+    aside .popcontainement {
+        flex-direction: column;
+    }
+    .popcontainement .pophost {
+        width : 100%;
+        max-height: 166px;
+    }
+    aside .pophost figcaption {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+/*section activité au dessus de 800px*/
+@media screen and (min-width:800px){
+    #activity {
+        padding: 2rem 0;
+    }
+    #activity .activitycontainement {
+        flex-direction: row;
+        margin-bottom: 2rem ;
+        column-gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    #activity .activity {
+        height: 100%;
+    }
+    #activity .mainactimg {
+        height: 420px;
+        width : 300px ;
+    }
+    #activity .actimg {
+        height: 150px;
+        width : 300px
+    }
+    #activity .actimg2 {
+        height: 180px;
+        width: 300px;
+    }
+    
+}
+/*Disposition du footer en dessous de 750px*/
+@media screen and (max-width:750px){
+    footer  {
+        background-color: #f2f2f2;
+    }
+    .footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footersection {
+        width : 100%;
+        padding : 0 ;
+    }
+    .footernav {
+        flex-wrap: wrap;
+        margin : 0 ;
+    }
+    footer h3 {
+        margin-top : 2rem ;
+    }
+}
